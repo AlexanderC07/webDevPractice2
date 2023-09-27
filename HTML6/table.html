@@ -14,33 +14,54 @@
 
    .schedule{  margin:0 auto;
                width:550px;
-               border: solid 2px black;
-               border-spacing: 3px;
-               padding-left:4px;
-               padding-right:4px;}
+               border: solid 1px black;
+               border-spacing: 4px;
+               padding:4px;}
+
+   td {  border: solid 1px;}
+
+   th {  border: solid 1px;}
+
+   .cap {font-weight:bold;
+         color:#003300;
+         padding:1px;}
+   
+   .courses {  background-color:#CCCCCC;
+               width:25%;}
+
+   .days {  background-color:#99FF66}
 
 </style>
 </head>
 <body>
 <div class="table_div">
-   <table class="schedule">
-      
-      <caption>My Class Schedule</caption>
+   <table class="schedule">  
+      <caption class="cap">My Class Schedule</caption>
+      <colgroup class="courses" span="1"></colgroup>
+      <colgroup class="timeframe" span="5"></colgroup>
       <tr>
-         <td>&nbsp;</td>
-         <th>Monday</th>
-         <th>Tuesday</th>
-         <th>Wednesday</th>
-         <th>Thursday</th>
-         <th>Friday</th>
+         <th>Courses</td>
+         <th class="days">Monday</th>
+         <th class="days">Tuesday</th>
+         <th class="days">Wednesday</th>
+         <th class="days">Thursday</th>
+         <th class="days">Friday</th>
       </tr>
       <tr>
-         <th scope="row">Info 1120</th>
+         <th scope="row">INFO 1120</th>
          <td>&nbsp;</td>
          <td>9-11</td>
          <td>&nbsp;</td>
          <td>9-11</td>
          <td rowspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+         <th scope="row">MATH 1010</th>
+         <td colspan="4">12-1</td>
+      </tr>
+      <tr>
+         <th scope="row">INFO 2420</th>
+         <td colspan="5">Online Available 24/7</td>
       </tr>
    </table>
 </div>
