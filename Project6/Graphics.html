@@ -1,79 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        #thumbs, #image {
-        width: 700px
-        border: solid 1px 000;
-        text-align: center;
-        margin: 0 auto 0 auto;
-        color: #000;
-        background: #eee;
-        padding: 5px;
-        }
-        #thumbs {
-        margin-top: 10px;
-        }
-        #thumbs img {
-        border: solid 1px #000;
-        margin: 5px;
-        }
-        #image{
-        height:400px;
-        }
-        .instructions{
-        font-style:italic;
-        }
-    </style>
-     
-     <script type="text/javascript">
-        <!-- Begin comment for older browsers//
-        var imgArray = new Array(
-        'Image1Lg.jpg',
-        'Image2Lg.jpg',
-        'Image3Lg.jpg',
-        'Image4Lg.jpg'
-        );
-        var titleArray = new Array(
-        'Brave Bald Eagle',
-        'Soaring Hawk',
-        'Wise Owl',
-        'Tiny Cardinal'
-        );
-        var imgPath = "Images/Fullsize/";
-        function swapImage(imgID) {
-        var theImage = document.getElementById('theImage');
-        var textDiv = document.getElementById('bottomText');
-        var newImg;
-        var textTitle;
-        newImg = imgArray[imgID];
-        theImage.src = imgPath + newImg;
-        textTitle=titleArray[imgID];
-        textDiv.innerHTML = textTitle;
-        }
-        function preloadImages() {
-        for(var i = 0; i < imgArray.length; i++) {
-        var tmpImg = new Image;
-        tmpImg.src = imgPath + imgArray[i];
-        }
-        }
-        // End comment for older browsers -->
-        </script>
-
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+
+<style type="text/css">
+    #thumbs, #image {
+    width: 700px;
+    border: solid 1px 000;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+    background: #eee;
+    padding: 5px;
+    }
+    #thumbs {
+    margin-top: 10px;
+    }
+    #thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+    }
+    #image{
+    height:400px;
+    }
+    .instructions{
+    font-style:italic;
+    }
+    </style>
+
+<script type="text/javascript">
+    <!-- Begin comment for older browsers//
+    var imgArray = new Array(
+    'Image1Lg.jpg',
+    'Image2Lg.jpg',
+    'Image3Lg.jpg',
+    'Image4Lg.jpg'
+    );
+    var titleArray = new Array(
+    'Brave Bald Eagle',
+    'Soaring Hawk',
+    'Wise Owl',
+    'Tiny Cardinal'
+    );
+    var imgPath = "Images/Fullsize/";
+    function swapImage(imgID) {
+    var theImage = document.getElementById('theImage');
+    var textDiv = document.getElementById('bottomText');
+    var newImg;
+    var textTitle;
+    newImg = imgArray[imgID];
+    theImage.src = imgPath + newImg;
+    textTitle=titleArray[imgID];
+    textDiv.innerHTML = textTitle;
+    }
+    function preloadImages() {
+    for(var i = 0; i < imgArray.length; i++) {
+    var tmpImg = new Image;
+    tmpImg.src = imgPath + imgArray[i];
+    }
+    }
+    // End comment for older browsers -->
+    </script>
+
 </head>
 
 <body onload="preloadImages()">
+
 <div>
     <a href=""
-        onmouseover="document.getElementById('print').src='Images/print2.jpg';"
-        onmouseout="document.getElementById('print').src='Images/print1.jpg';">
-            <img src="Images/Print1.jpg" alt="Print Page" width="200" height="50"
-        id="print"></a>
+    onmouseover="document.getElementById('print').src='Images/print2.jpg';"
+    onmouseout="document.getElementById('print').src='Images/print1.jpg';">
+    <img src="Images/Print1.jpg" alt="Print Page" width="200" height="50"
+    id="print"></a>
 </div>
-
-<!--Logo Rollover Goes Here-->
+    
+<div>
+    <a href=""
+    onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+    onmouseout="document.getElementById('logo').src='Images/BackyardBirdsLogo.png';">
+    <img src="Images/BackyardBirdsLogo.png" alt="Logo" id="logo"></a>
+</div>
 
 <p class="instructions">
     <div id="thumbs">
@@ -95,6 +102,8 @@
 <p>
 The content of the document goes here . . .
 </p>
+
+<img src="Images/backimage.jpg" alt="Background" width="900" height="104"/>
 
 </body>
 </html>

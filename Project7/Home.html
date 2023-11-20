@@ -1,0 +1,73 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Birdhouse</title>
+
+<link rel="stylesheet" href="mystyle.css">
+
+<script type="text/javascript" src="myscript.js"></script>
+
+</head>
+
+<body onload="preloadImages()">
+    <div id="container">
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Tributes</a></li>
+                    <li><a href="#">Survey</a></li>
+                    <li><a href="#">Favorites</a></li>
+                </ul>
+            </nav>
+            <a href=""
+            onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+            onmouseout="document.getElementById('logo').src='Images/BackyardBirdsLogo.png';">
+            <img src="Images/BackyardBirdsLogo.png" alt="Logo" id="logo"></a>
+            <img src="Images/BackyardBirdsBanner.png" class="ban" alt="banner" width="600" height="150">
+        </header>
+
+        <section>
+            <article>
+                <h1>Welcome to Backyard Birds of Utah!</h1>
+                <p>
+                    If you love birdwatching like we do, you should enjoy looking around this site.
+                    </p>
+                <p>Take a look at our Bird Profiles and take the opportunity to complete our survey.</p>
+                <div class="imgswap">
+                    <h2>Photograph Selection</h2>
+                    <div id="thumbs">
+                        <img src="Images/Thumbnails/Image1Sm.jpg" alt="BaldEagle"
+                        onmouseover="swapImage(0);" />
+                        <img src="Images/Thumbnails/Image2Sm.jpg" alt="Hawk"
+                        onmouseover="swapImage(1);" />
+                        <img src="Images/Thumbnails/Image3Sm.jpg" alt="Owl"
+                        onmouseover="swapImage(2);" />
+                        <img src="Images/Thumbnails/Image4Sm.jpg" alt="Cardinal"
+                        onmouseover="swapImage(3);" />
+                        <br />
+                        </div>
+                        <div id="image">
+                        <img id="theImage" src="Images/FullSize/Image1Lg.jpg" alt="Bald Eagle" />
+                        <h3 id="bottomText">Brave Bald Eagle</h3>
+                        </div>
+                </div>
+                    <div class="triputes-snippets">
+                        <img src="Images/RobinSm.jpg" class="rob" alt="Robin" width="250" height="208">
+                        <h2>Tributes</h2>
+                        <p>Wow!!! Who would have thought all these birds live in Utah. I was attracted to the Birds of Utah calendar because of the great horned owl on the cover...</p>
+                        <p><a>More>></a></p>
+                    </div>
+            </article>
+        </section>
+    <footer>
+        <p><a href="ac035960@stu.provo.edu">Email The Owners</a></p>
+        <p>This web site has been created soley for educational purposes</p>
+    </footer>
+    </div>
+
+
+</body>
+</html>
