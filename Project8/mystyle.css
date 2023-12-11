@@ -24,7 +24,12 @@ a:hover {color:#2A7E43;}
 .alignright {float:right;
         padding-right: 10px;
         padding-left: 10px;
+        
         }
+
+.alignleft {
+    padding-left:175px;
+}
 
 .map {
     margin-right: auto;
@@ -62,7 +67,7 @@ padding:2px 10px;}
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height:275px;
+    height:225px;
     color:#A3BBC6;
 }
 
@@ -119,12 +124,12 @@ article {
     margin-left: auto;
 }
 
-article p {
+article p, blockquote, ul {
     color:#030422;
     padding-left:175px;
 }
 
-article h1, h2 {
+article h1, h2, #print{
     padding-left:175px;
 }
 
