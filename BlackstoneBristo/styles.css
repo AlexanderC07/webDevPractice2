@@ -1,0 +1,14 @@
+ol, ul { 
+    list-style-type: none;
+     }
+#perens {
+    font-style: italic;
+}
+
+#pizzanum {
+    display: inline;
+}
+
+.inline {
+    display:inline;
+}
