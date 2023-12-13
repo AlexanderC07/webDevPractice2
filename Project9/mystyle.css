@@ -4,14 +4,16 @@ body {  background-color: #A3BBC6;
 }
 
 h1 {font-family:sans-serif;
-color:#09521F;}
+    color:#09521F;
+    font-size:20px;}
 
 h2 {font-family:'Times New Roman', Times, serif;
 color:#09521F;}
 
 li {font-family:Verdana, Geneva, Tahoma, sans-serif}
 
-p { font-family:serif;}
+p { font-family:serif;
+    color:#030422;}
 
 blockquote { font-family :Georgia, 'Times New Roman', Times, serif}
 
@@ -29,6 +31,15 @@ a:hover {color:#2A7E43;}
 
 .alignleft {
     padding-left:175px;
+    display:inline;
+}
+
+.inline {
+    display:inline;
+}
+
+.block {
+    display:block;
 }
 
 .map {
@@ -124,13 +135,21 @@ article {
     margin-left: auto;
 }
 
+.spacing {
+    padding-bottom: 40px;
+}
+
 article p, blockquote, ul {
-    color:#030422;
     padding-left:175px;
 }
 
-article h1, h2, #print{
+article h1, h2, #print, article img, article a:link{
     padding-left:175px;
+}
+
+.linksect {
+    padding-left: 225px;
+    width: 800px;
 }
 
 #thumbs, #image {
