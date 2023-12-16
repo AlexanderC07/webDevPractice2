@@ -136,18 +136,23 @@ article {
 
 .spacing {
     padding-bottom: 40px;
+    padding-left: 175px;
 }
 
 article p, blockquote{
     padding-left:175px;
 }
 
-article h1, h2, #print, article form{
+article h1, h2, #print, article form, article a{
     padding-left:175px;
 }
 
-#padding{
-    padding-left:175px;
+.nopad {
+    padding-left:0px;
+}
+
+.margin {
+    margin-left:175px;
 }
 
 ul {
