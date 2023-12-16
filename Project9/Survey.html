@@ -35,25 +35,25 @@
         <section>
             <article>
                 <h1>Customer Survey</h1>
-                <form>
+                <form name="CustomerSurvey" target="_blank" action="FormToEmail.php" method="post">
                 <fieldset>
                   <legend>General Information</legend>
                   <ul>
                     <li>
                         <label for="first">First Name:</label>
-                        <input name="first" type="text">
+                        <input name="first" type="text" id="first">
                     </li>
                     <li>
                         <label for="last">Last Name:</label>
-                        <input name="last" type="text">
+                        <input name="last" type="text" id="last">
                     </li>
                     <li>
                         <label for="phone">Phone Number:</label>
-                        <input name="phone" type="text">
+                        <input name="phone" type="text" id="phone">
                     </li>
                     <li>
                         <label for="email">Email:</label>
-                        <input name="email" type="text">
+                        <input name="email" type="text" id="email">
                     </li>
                 </ul>
                 </fieldset>
@@ -64,29 +64,137 @@
                     </legend>
                     <ul>
                         <li>
-                            <label>Agree</label>
-                            <input type="radio">
+                            <label for="schedule">Agree</label>
+                            <input name="schedule" type="radio" id="schedule">
                         </li>
                         <li>
-                            <label>Neutral</label>
-                            <input type="radio">
+                            <label for="schedule">Neutral</label>
+                            <input name="schedule" type="radio" id="schedule">
                         </li>
                         <li>
-                            <label>Disagree</label>
-                            <input type="radio">
+                            <label for="schedule">Disagree</label>
+                            <input name ="schedule" type="radio" id="schedule">
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Favorite Bird</legend>
+                    <legend>Living Location</legend>
+                    <ul>
+                        <li>
+                            <label for="location">Urban</label>
+                            <input name="location" type="radio" id="location">
+                        </li>
+                        <li>
+                            <label>Suburban</label>
+                            <input name="location" type="radio" id="location">
+                        </li>
+                        <li>
+                            <label>Rural</label>
+                            <input name="location" type="radio" id="location">
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Living Location</legend>
+                    <legend>How Often Do You See Birds</legend>
+                    <ul>
+                        <li>
+                            <label for="often">Often</label>
+                            <input name="often" type="radio" id="often">
+                        </li>
+                        <li>
+                            <label for="often">Occasionally</label>
+                            <input name="often" type="radio" id="often">
+                        </li>
+                        <li>
+                            <label for="often">Barely</label>
+                            <input name="often" type="radio" id="often">
+                        </li>
+                    </ul>
                 </fieldset>
-            </fieldset>
+                <fieldset>
+                    <legend>What Is Your Experience With Photography</legend>
+                    <ul>
+                        <li>
+                            <label for="photography">Expert</label>
+                            <input name="photography" type="radio" id="photography">
+                        </li>
+                        <li>
+                            <label for="photography">Intermediate</label>
+                            <input name="photography" type="radio" id="photography">
+                        </li>
+                        <li>
+                            <label for="photography">Beginner</label>
+                            <input name="photography" type="radio" id="photography">
+                        </li>
+                        <li>
+                            <label for="photography">None</label>
+                            <input name="photography" type="radio" id="photography">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>What Birds Would You Like To See More Of?</legend>
+                    <ul>
+                        <li>
+                            <label for="song">Songbirds</label>
+                            <input name="song" type="checkbox" id="song">
+                        </li>
+                        <li>
+                            <label for="sea">Seabirds</label>
+                            <input name="sea" type="checkbox" sea="sea">
+                        </li>
+                        <li>
+                            <label for="owl">Owls</label>
+                            <input name="owl" type="checkbox" id="owl">
+                        </li>
+                        <li>
+                            <label for="raptors">Raptors</label>
+                            <input name="raptors" type="checkbox" id="raptors">
+                        </li>
+                        <li>
+                            <label for="wading">Wading Birds</label>
+                            <input name="wading" type="checkbox" id="wading">
+                        </li>
+                        <li>
+                            <label for="turkey">Turkey-like Birds</label>
+                            <input name="turkey" type="checkbox" id="turkey">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>What Is Your Favorite Bird?</legend>
+                    <ul>
+                        <li>
+                            <label for="favorite">Type Here:</label>
+                            <input name="favorite" type="text" id="favorite">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Describe Your Personal Experience With Wildlife</legend>
+                    <ul>
+                        <li>
+                            <label for="personal">Type Here:</label>
+                            <input name="personal" type="textarea" id="personal">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend >How Many Calenders Do You Have In Your House</legend>
+                    <select name="calendars" selected="1" tabindex="1" id="calendars">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                    </select>
+                </fieldset>
+            <div>
                 <input name="subButton" type="submit" value="Submit">
                 <input name="resButton" type="reset" value="Reset">
-                </form>
+            </div>
+            </fieldset>
+           </form>
             </article>
         </section>
     <footer>

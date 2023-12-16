@@ -207,3 +207,7 @@ form {
     color:#000;
     padding-left:0px;
 }
+
+legend {
+    font-size:18px;
+}
